@@ -14,6 +14,19 @@
     <p th:text="${manipedi}"></p>
 </div>
 <div id = "servicesMenu">
+    <h2>Menu of Available Services</h2>
+    <table>
+        <thead>
+            <th>Treatments</th>
+        </thead>
+        <tbody>
+            <th:block th:each="treatment:${appropriateFacials}">
+            <tr>
+                <td th:text="${Treatments}"> </td>
+            </tr>
+            </th:block>
+        </tbody>
+
 </div>
 </body>
 </html>
